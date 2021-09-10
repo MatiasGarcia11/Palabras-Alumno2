@@ -36,7 +36,20 @@ class palabra
         $array['consonantes'] = $this->cuentaLetras($consonantes);
         return $array;
     }    
-    
+    public function palindromo(){
+
+        $cadena= $this->texto;
+        $cadenainvertida = strrev($cadena);
+
+        if (strcmp($cadena, $cadenainvertida)==0) 
+        {
+            echo "La palabra  <b>$cadena</b> es un palíndromo <br>";
+        }
+        else{
+                echo "La palabra <b>$cadena</b> no es un palíndromo <br>";
+            }
+
+     } 
 }
 
 
